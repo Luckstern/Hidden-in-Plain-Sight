@@ -1,14 +1,15 @@
+U+034F cgj: ͏
+U+061C alm: ؜
 U+180E mvs: ᠎
 U+200B zwsp: ​
 U+200C zwnj: ‌
 U+200D zwj: ‍
-U+200E lrm: ‎
-U+200F rlm: ‏
 U+202A lre: ‪
 U+202B rle: ‫
 U+202C pdf: ‬
 U+202D lro: ‭
 U+202E rlo: ‮
+U+2060 wj: ⁠
 U+2062 it: ⁢
 U+2063 is: ⁣
 U+2064 ip: ⁤
