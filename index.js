@@ -102,10 +102,13 @@ function _decode(message) {
 /**
  * Runs when the encode button is pressed. Gets the inputted public and private messages and passes it to _encode()
  */
-function encode() {
+async function encode() {
     let publicVal = document.getElementById("public").value;
     let privateVal = document.getElementById("private").value;
-    document.getElementById("encoded").value = _encode(publicVal, privateVal);
+    let encodedVal = _encode(publicVal, privateVal);
+    document.getElementById("encoded").value = encodedVal;
+    document.getElementById("encoded").select();
+    await navigator.clipboard.writeText(encodedVal);
 }
 
 /**
