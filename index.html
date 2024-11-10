@@ -10,6 +10,14 @@
     <header>
         <h1>Hidden in Plain Sight</h1>
         <h3>A steganography technique that uses zero-width characters to encode hidden data in a plaintext string.</h3>
+        <h4>
+            Instructions: To encode a message, type an unsuspecting, visible message into the <i>Public message</i>
+            text box. Then, hit encode. The message will show up in the <i>Encoded</i> text box and be automatically
+            copied into your clipboard.
+            <br>
+            To decode a message, paste a zero-width encoded message into the <i>Encoded</i> text box then hit decode.
+            The public and private messages will show up in their corresponding text boxes.
+        </h4>
     </header>
     <main>
         <div id="inputs">
@@ -22,13 +30,21 @@
                 <input type="text" id="private">
             </div>
         </div>
+        <div id="buttons">
+            <button id="encode">↓Encode↓</button>
+            <button id="decode">↑Decode↑</button>
+        </div>
         <div id="output-container">
-            <label for="output">Output:</label>
-            <input value="⁢⁤﻿⁢‍﻿⁢‬﻿⁢᠎﻿‮‪﻿hello" type="text" id="output">
+            <label for="encoded">Encoded:</label>
+            <input type="text" id="encoded">
         </div>
     </main>
     <footer>
-        <p>For an explanation and the code, visit the <a href="https://github.com/luckstern/Hidden-in-Plain-Sight" target="_blank">GitHub</a> repo</p>
+        <p>For a full explanation and the code, visit the <a href="https://github.com/luckstern/Hidden-in-Plain-Sight" target="_blank">GitHub</a> repo</p>
     </footer>
+    <script>
+        document.getElementById("encode").addEventListener('click', encode);
+        document.getElementById("decode").addEventListener('click', decode);
+    </script>
 </body>
 </html>
