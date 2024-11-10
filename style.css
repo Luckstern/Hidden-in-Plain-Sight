@@ -29,6 +29,10 @@ header {
     justify-content: center;
 }
 
+#buttons > button {
+    margin: 10px 20px;
+}
+
 #output-container {
     display: flex;
     margin: 10px;
