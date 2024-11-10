@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Hidden in Plain Sight</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <header>
+        <h1>Hidden in Plain Sight</h1>
+        <h3>A steganography technique that uses zero-width characters to encode hidden data in a plaintext string.</h3>
+    </header>
+    <main>
+        <div id="inputs">
+            <div>
+                <label for="public">Public message:</label>
+                <input type="text" id="public">
+            </div>
+            <div>
+                <label for="private">Private message:</label>
+                <input type="text" id="private">
+            </div>
+        </div>
+        <div id="output-container">
+            <label for="output">Output:</label>
+            <input value="⁢⁤﻿⁢‍﻿⁢‬﻿⁢᠎﻿‮‪﻿hello" type="text" id="output">
+        </div>
+    </main>
+    <footer>
+        <p>For an explanation and the code, visit the <a href="https://github.com/luckstern/Hidden-in-Plain-Sight" target="_blank">GitHub</a> repo</p>
+    </footer>
 </body>
 </html>

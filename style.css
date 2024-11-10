@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@250&display=swap');
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: Urbanist, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+#inputs {
+    display: flex;
+}
+
+#inputs > div {
+    display: flex;
+    flex: 1;
+    margin: 10px;
+}
+
+#inputs > div > input {
+    flex-grow: 1;
+}
+
+#output-container {
+    display: flex;
+    margin: 10px;
+}
+
+#output-container > input {
+    flex-grow: 1;
+}
+
+label {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+}
