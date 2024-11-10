@@ -5,7 +5,6 @@ U+200B zwsp: ​
 U+200C zwnj: ‌
 U+200D zwj: ‍
 U+202A lre: ‪
-U+202B rle: ‫
 U+202C pdf: ‬
 U+202D lro: ‭
 U+202E rlo: ‮
