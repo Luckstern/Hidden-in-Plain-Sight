@@ -5,7 +5,7 @@
  */
 let chars = [
                     "\u034f", "\u061c", "\u180e", "\u200b", "\u200c", "\u200d", "\u202a", "\u202b", "\u202c", "\u202d",
-                    "\u202e", "\u2060", "\u2062", "\u2063", "\u2064", "\ue0041", "\ufeff"
+                    "\u202e", "\u2060", "\u2062", "\u2063", "\u2064", "\ufeff"
 ];
 
 /**
@@ -105,13 +105,13 @@ function _decode(message) {
 function encode() {
     let publicVal = document.getElementById("public").value;
     let privateVal = document.getElementById("private").value;
-    document.getElementById("output").value = _encode(publicVal, privateVal);
+    document.getElementById("encoded").value = _encode(publicVal, privateVal);
 }
 
 /**
  * Runs when the decode button is pressed. Grabs the inputted encoded message and passes it to _decode()
  */
 function decode() {
-    let outputVal = document.getElementById("output").value;
-    [document.getElementById("public").value, document.getElementById("private").value] = _decode(outputVal);
+    let encodedVal = document.getElementById("encoded").value;
+    [document.getElementById("public").value, document.getElementById("private").value] = _decode(encodedVal);
 }
