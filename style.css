@@ -24,6 +24,11 @@ header {
     flex-grow: 1;
 }
 
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
 #output-container {
     display: flex;
     margin: 10px;
